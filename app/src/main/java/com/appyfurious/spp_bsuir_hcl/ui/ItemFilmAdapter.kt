@@ -1,8 +1,9 @@
-package com.appyfurious.spp_bsuir_hcl
+package com.appyfurious.spp_bsuir_hcl.ui
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
+import com.appyfurious.spp_bsuir_hcl.db.Film
 
 class ItemFilmAdapter(val context: Context, val items : List<Film>) : RecyclerView.Adapter<ItemFilmHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemFilmHolder {

@@ -1,5 +1,6 @@
-package com.appyfurious.spp_bsuir_hcl
+package com.appyfurious.spp_bsuir_hcl.repositories
 
+import com.appyfurious.spp_bsuir_hcl.db.Film
 import io.realm.Realm
 
 class FilmRepository {

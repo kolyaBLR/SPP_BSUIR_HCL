@@ -1,7 +1,8 @@
-package com.appyfurious.spp_bsuir_hcl
+package com.appyfurious.spp_bsuir_hcl.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.appyfurious.spp_bsuir_hcl.R
 
 class FilmCreatedActivity : AppCompatActivity() {
 

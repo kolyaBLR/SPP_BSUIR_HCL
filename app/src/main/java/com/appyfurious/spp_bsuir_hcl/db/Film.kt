@@ -1,4 +1,4 @@
-package com.appyfurious.spp_bsuir_hcl
+package com.appyfurious.spp_bsuir_hcl.db
 
 import io.realm.RealmList
 import io.realm.RealmObject
