@@ -1,19 +1,19 @@
 package com.appyfurious.spp_bsuir_hcl.repositories
 
+import com.appyfurious.spp_bsuir_hcl.db.Actor
 import com.appyfurious.spp_bsuir_hcl.db.Film
 import io.realm.Realm
 
-class FilmRepository {
-
-    fun create(film: Film) {
+class ActorRepository {
+    fun create(actor: Actor) {
         Realm.getDefaultInstance().executeTransaction {
-            it.insert(film)
+            it.insert(actor)
         }
     }
 
-    fun get(body: (List<Film>) -> Unit) {
+    fun get(body: (List<Actor>) -> Unit) {
         Realm.getDefaultInstance().executeTransaction {
-            body(it.where(Film::class.java).findAll())
+            body(it.where(Actor::class.java).findAll())
         }
     }
 }
