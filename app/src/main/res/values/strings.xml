@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SPP_BSUIR_HCL</string>
+    <string name="search">Поиск</string>
+    <string name="genre">Жанр</string>
+    <string name="add">Добавить</string>
+    <string name="name">Название</string>
+    <string name="image_link">Ссылка на картинку</string>
+    <string name="tags_search">теги, для поиска</string>
+    <string name="add_video">Добавить видео</string>
+</resources>
