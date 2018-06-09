@@ -13,6 +13,8 @@ open class Film(): RealmObject() {
     var tags: List<String> = RealmList()
     var imageLink: String ?= null
     var videoId: String ?= null
+    var actors : RealmList<Actor> = RealmList()
+    var producers : RealmList<Producer> = RealmList()
 }
 
 
