@@ -1,6 +1,6 @@
 package com.appyfurious.spp_bsuir_hcl.repositories
 
-import com.appyfurious.spp_bsuir_hcl.db.*
+import com.appyfurious.spp_bsuir_hcl.db.Video
 import io.realm.Realm
 
 class VideoRepository {

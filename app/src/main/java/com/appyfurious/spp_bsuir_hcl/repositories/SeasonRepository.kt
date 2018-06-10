@@ -1,8 +1,5 @@
 package com.appyfurious.spp_bsuir_hcl.repositories
 
-import com.appyfurious.spp_bsuir_hcl.db.Actor
-import com.appyfurious.spp_bsuir_hcl.db.Film
-import com.appyfurious.spp_bsuir_hcl.db.Producer
 import com.appyfurious.spp_bsuir_hcl.db.Season
 import io.realm.Realm
 
