@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.FilmCreatedActivity" />
-        <activity android:name=".ui.activity.FilmDetailActivity"></activity>
+        <activity android:name=".ui.activity.FilmDetailActivity" />
+        <activity android:name=".ui.activity.UserCreatedActivity"></activity>
     </application>
 
 </manifest>
