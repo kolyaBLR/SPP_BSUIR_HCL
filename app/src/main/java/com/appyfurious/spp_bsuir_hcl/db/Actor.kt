@@ -11,5 +11,4 @@ open class Actor : RealmObject() {
     var middleName: String? = null
     var lastName: String? = null
     var about: String? = null
-
 }

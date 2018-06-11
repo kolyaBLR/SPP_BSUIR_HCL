@@ -10,4 +10,7 @@ class ItemFilmHolder(val view: View) : RecyclerView.ViewHolder(view) {
     val name = view.findViewById<TextView>(R.id.itemNameFilm)!!
     val imageView = view.findViewById<ImageView>(R.id.itemImageFilm)!!
     val tags = view.findViewById<TextView>(R.id.itemTagsFilm)!!
+    val preview = view.findViewById<TextView>(R.id.itemPreviewFilm)!!
+    val actors = view.findViewById<TextView>(R.id.itemActorsFilm)!!
+    val producers = view.findViewById<TextView>(R.id.itemProducesFilm)!!
 }

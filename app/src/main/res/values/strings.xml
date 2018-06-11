@@ -8,4 +8,7 @@
     <string name="tags_search">теги, для поиска</string>
     <string name="add_video">Добавить видео</string>
     <string name="add_film">Добавить фильм</string>
+    <string name="films_and_serials">фильмы/сериалы</string>
+    <string name="films">фильмы</string>
+    <string name="serials">сериалы</string>
 </resources>

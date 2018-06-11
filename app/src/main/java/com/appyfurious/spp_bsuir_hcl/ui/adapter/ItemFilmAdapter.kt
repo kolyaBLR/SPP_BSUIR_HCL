@@ -25,7 +25,13 @@ class ItemFilmAdapter(val context: Context, val items: List<Film>) : RecyclerVie
             item.imageLink?.let {
                 Picasso.get().load(it).into(holder.imageView)
             }
+            preview.text = item.video?.description
+            actors.text = item.actors.joinToString(", ") {
+                "${it.firstName ?: ""} ${it.middleName ?: ""} ${it.lastName ?: ""}"
+            }
+            producers.text = item.producers.joinToString(", ") {
+                "${it.firstName ?: ""} ${it.middleName ?: ""} ${it.lastName ?: ""}"
+            }
         }
     }
-
 }

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import com.appyfurious.spp_bsuir_hcl.R
 import com.appyfurious.spp_bsuir_hcl.repositories.FilmRepository
 import com.appyfurious.spp_bsuir_hcl.ui.adapter.ItemFilmAdapter
@@ -22,6 +23,9 @@ class FilmActivity : AppCompatActivity() {
         filmRepository.get {
             listFilm.adapter = ItemFilmAdapter(this, it)
         }
+        type.adapter = ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, listOf(getString(R.string.films_and_serials),
+                getString(R.string.films), getString(R.string.serials)))
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
