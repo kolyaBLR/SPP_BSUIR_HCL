@@ -16,16 +16,3 @@ open class Film() : RealmObject() {
     var actors: RealmList<Actor> = RealmList()
     var producers: RealmList<Producer> = RealmList()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
