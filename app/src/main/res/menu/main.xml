@@ -5,5 +5,5 @@
         android:id="@+id/new_film"
         android:icon="@drawable/add"
         android:title="@string/add"
-        app:showAsAction="ifRoom|always" />
+        app:showAsAction="ifRoom" />
 </menu>
