@@ -5,9 +5,9 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import java.util.*
 
-class Season : RealmObject() {
+open class Season : RealmObject() {
     @PrimaryKey
     var id = UUID.randomUUID().toString()
-    var number :String ?= null
-    var videos : RealmList<Video> = RealmList()
+    var number: String? = null
+    var videos: RealmList<Video> = RealmList()
 }

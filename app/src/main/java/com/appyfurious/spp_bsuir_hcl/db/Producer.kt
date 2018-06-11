@@ -4,7 +4,7 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import java.util.*
 
-class Producer: RealmObject() {
+open class Producer : RealmObject() {
     @PrimaryKey
     var id = UUID.randomUUID().toString()
     var firstName: String? = null

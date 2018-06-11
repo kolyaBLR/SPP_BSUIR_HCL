@@ -4,10 +4,10 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import java.util.*
 
-class Series : RealmObject() {
+open class Series : RealmObject() {
     @PrimaryKey
     var id = UUID.randomUUID().toString()
-    var name : String ?= null
-    var description : String ?= null
-    var preview : String ?= null
+    var name: String? = null
+    var description: String? = null
+    var preview: String? = null
 }

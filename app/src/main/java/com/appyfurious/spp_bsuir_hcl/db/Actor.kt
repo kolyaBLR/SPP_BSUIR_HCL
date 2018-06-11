@@ -4,7 +4,7 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import java.util.*
 
-class Actor : RealmObject() {
+open class Actor : RealmObject() {
     @PrimaryKey
     var id = UUID.randomUUID().toString()
     var firstName: String? = null
