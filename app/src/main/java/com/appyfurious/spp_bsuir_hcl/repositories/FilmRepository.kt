@@ -10,6 +10,7 @@ class FilmRepository {
 
     val films = listOf(
             Film().apply {
+                this.id = "1"
                 this.name = "Зелёная миля"
                 this.tags.addAll(listOf(
                         "Драма",
@@ -39,6 +40,7 @@ class FilmRepository {
                 )
             },
             Film().apply {
+                this.id = "2"
                 this.name = "Побег из Шоушенка"
                 this.tags.addAll(listOf(
                         "Драма"
@@ -65,6 +67,7 @@ class FilmRepository {
                 )
             },
             Film().apply {
+                this.id = "3"
                 this.name = "Омерзительная восьмерка"
                 this.tags.addAll(listOf(
                         "Детективный вестерн"
@@ -92,6 +95,7 @@ class FilmRepository {
                 )
             },
             Film().apply {
+                this.id = "4"
                 this.name = "Джанго освобождённый"
                 this.tags.addAll(listOf(
                         "Комедия",
@@ -119,6 +123,7 @@ class FilmRepository {
                 )
             },
             Film().apply {
+                this.id = "5"
                 this.name = "Дом"
                 this.tags.addAll(listOf(
                         "фантастика",
@@ -148,6 +153,7 @@ class FilmRepository {
                 )
             },
             Film().apply {
+                this.id = "6"
                 this.name = "Джон Уик"
                 this.tags.addAll(listOf(
                         "боевик"
@@ -174,6 +180,7 @@ class FilmRepository {
                 )
             },
             Film().apply {
+                this.id = "7"
                 this.name = "Матрица"
                 this.tags.addAll(listOf(
                         "боевик",
@@ -203,7 +210,9 @@ class FilmRepository {
     )
 
     fun create() {
-
+        Realm.getDefaultInstance().executeTransaction {
+            it.insertOrUpdate(films)
+        }
     }
 
     fun create(film: Film) {

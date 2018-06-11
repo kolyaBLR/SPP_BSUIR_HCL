@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.appyfurious.spp_bsuir_hcl.R
 import com.appyfurious.spp_bsuir_hcl.db.Film
 import com.appyfurious.spp_bsuir_hcl.ui.adapter.holder.ItemFilmHolder
+import com.squareup.picasso.Picasso
 
 class ItemFilmAdapter(val context: Context, val items: List<Film>) : RecyclerView.Adapter<ItemFilmHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemFilmHolder {
@@ -22,7 +23,7 @@ class ItemFilmAdapter(val context: Context, val items: List<Film>) : RecyclerVie
             this.name.text = item.name
             this.tags.text = item.tags.joinToString(", ")
             item.imageLink?.let {
-
+                Picasso.get().load(it).into(holder.imageView)
             }
         }
     }
