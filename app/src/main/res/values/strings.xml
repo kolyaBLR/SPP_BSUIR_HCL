@@ -19,4 +19,5 @@
     <string name="producer">Продюсер</string>
     <string name="actor">Актер</string>
     <string name="success_user_created">Пользователь успешно создан!</string>
+    <string name="error_create_user">Заполните первые 3 поля пользователя</string>
 </resources>

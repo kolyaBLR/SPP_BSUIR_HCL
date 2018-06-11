@@ -31,10 +31,15 @@ class UserCreatedActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
             R.id.new_film -> {
-                saveUser()
-                Toast.makeText(this@UserCreatedActivity,
-                        R.string.success_user_created, Toast.LENGTH_SHORT).show()
-                finish()
+                if (name1.text.isNotEmpty() && name2.text.isNotEmpty() && name3.text.isNotEmpty()) {
+                    saveUser()
+                    Toast.makeText(this@UserCreatedActivity,
+                            R.string.success_user_created, Toast.LENGTH_SHORT).show()
+                    finish()
+                } else {
+                    Toast.makeText(this@UserCreatedActivity,
+                            R.string.error_create_user, Toast.LENGTH_SHORT).show()
+                }
             }
         }
         return super.onOptionsItemSelected(item)

@@ -32,7 +32,7 @@ class FilmCreatedActivity : AppCompatActivity() {
         addFilmButton.setOnClickListener({
             if(nameFilm.text.isEmpty() || linkImageFilm.text.isEmpty() || tagsFilm.text.isEmpty() || filmVideoID.selectedItemId == 0L) {
                 Toast.makeText(this@FilmCreatedActivity
-                        , "Все поля обязательны для заполнения!!!", Toast.LENGTH_SHORT)
+                        , "Все поля обязательны для заполнения!!!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             FilmRepository().create(Film().apply {
@@ -42,11 +42,7 @@ class FilmCreatedActivity : AppCompatActivity() {
                     tags.add(it)
                 }
                 this.video = videos[(filmVideoID.selectedItemId - 1).toInt()]
-
-
             })
-
-
         })
     }
 }
