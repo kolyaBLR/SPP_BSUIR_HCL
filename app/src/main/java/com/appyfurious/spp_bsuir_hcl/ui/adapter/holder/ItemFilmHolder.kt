@@ -1,4 +1,4 @@
-package com.appyfurious.spp_bsuir_hcl.ui
+package com.appyfurious.spp_bsuir_hcl.ui.adapter.holder
 
 import android.support.v7.widget.RecyclerView
 import android.view.View

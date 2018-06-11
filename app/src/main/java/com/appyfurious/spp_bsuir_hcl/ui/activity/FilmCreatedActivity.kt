@@ -1,4 +1,4 @@
-package com.appyfurious.spp_bsuir_hcl.ui
+package com.appyfurious.spp_bsuir_hcl.ui.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
