@@ -10,7 +10,7 @@ open class Film() : RealmObject() {
     @PrimaryKey
     var id: String = UUID.randomUUID().toString()
     var name: String? = null
-    var tags: List<String> = RealmList()
+    var tags: RealmList<String> = RealmList()
     var imageLink: String? = null
     var videoId: String? = null
     var actors: RealmList<Actor> = RealmList()
