@@ -1,5 +1,6 @@
 package com.appyfurious.spp_bsuir_hcl.ui.activity
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -35,7 +36,8 @@ class FilmActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-
+            R.id.new_film -> startActivity(Intent(this@FilmActivity,
+                    FilmCreatedActivity::class.java))
         }
         return super.onOptionsItemSelected(item)
     }

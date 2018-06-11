@@ -1,5 +1,6 @@
 package com.appyfurious.spp_bsuir_hcl.ui.adapter.holder
 
+import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
@@ -13,4 +14,5 @@ class ItemFilmHolder(val view: View) : RecyclerView.ViewHolder(view) {
     val preview = view.findViewById<TextView>(R.id.itemPreviewFilm)!!
     val actors = view.findViewById<TextView>(R.id.itemActorsFilm)!!
     val producers = view.findViewById<TextView>(R.id.itemProducesFilm)!!
+    val button = view.findViewById<CardView>(R.id.showFilm)!!
 }

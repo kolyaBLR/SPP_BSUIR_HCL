@@ -1,6 +1,8 @@
 package com.appyfurious.spp_bsuir_hcl.ui.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -31,6 +33,12 @@ class ItemFilmAdapter(val context: Context, val items: List<Film>) : RecyclerVie
             }
             producers.text = item.producers.joinToString(", ") {
                 "${it.firstName ?: ""} ${it.middleName ?: ""} ${it.lastName ?: ""}"
+            }
+            button.setOnClickListener {
+                try {
+                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(item.video?.link)))
+                } catch (ex: Exception) {
+                }
             }
         }
     }
