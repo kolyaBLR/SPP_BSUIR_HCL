@@ -7,9 +7,16 @@
     <string name="image_link">Ссылка на картинку</string>
     <string name="tags_search">теги, для поиска</string>
     <string name="add_video">Добавить видео</string>
-    <string name="add_film">Добавить фильм</string>
+    <string name="add_film">Добавить новый фильм</string>
     <string name="films_and_serials">фильмы/сериалы</string>
     <string name="films">фильмы</string>
     <string name="serials">сериалы</string>
     <string name="film_show">СМОТРЕТЬ</string>
+    <string name="name1">Имя</string>
+    <string name="name2">Фамилия</string>
+    <string name="name3">Отчество</string>
+    <string name="about">Описание</string>
+    <string name="producer">Продюсер</string>
+    <string name="actor">Актер</string>
+    <string name="success_user_created">Пользователь успешно создан!</string>
 </resources>
