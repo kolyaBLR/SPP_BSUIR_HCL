@@ -6,7 +6,7 @@ import java.util.*
 
 open class Video : RealmObject() {
     @PrimaryKey
-    var id = UUID.randomUUID().toString()
+    var id : String = UUID.randomUUID().toString()
     var link: String? = null
     var description: String? = null
     var preview: String? = null

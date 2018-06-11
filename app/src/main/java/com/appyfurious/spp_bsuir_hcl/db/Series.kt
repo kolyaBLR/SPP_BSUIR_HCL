@@ -6,7 +6,7 @@ import java.util.*
 
 open class Series : RealmObject() {
     @PrimaryKey
-    var id = UUID.randomUUID().toString()
+    var id: String = UUID.randomUUID().toString()
     var name: String? = null
     var description: String? = null
     var preview: String? = null

@@ -8,7 +8,7 @@ import java.util.*
 open class Film() : RealmObject() {
 
     @PrimaryKey
-    var id = UUID.randomUUID().toString()
+    var id: String = UUID.randomUUID().toString()
     var name: String? = null
     var tags: List<String> = RealmList()
     var imageLink: String? = null

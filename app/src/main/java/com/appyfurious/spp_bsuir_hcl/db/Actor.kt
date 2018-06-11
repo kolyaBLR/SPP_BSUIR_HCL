@@ -6,7 +6,7 @@ import java.util.*
 
 open class Actor : RealmObject() {
     @PrimaryKey
-    var id = UUID.randomUUID().toString()
+    var id : String = UUID.randomUUID().toString()
     var firstName: String? = null
     var middleName: String? = null
     var lastName: String? = null

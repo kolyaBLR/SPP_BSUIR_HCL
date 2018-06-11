@@ -7,7 +7,7 @@ import java.util.*
 
 open class Season : RealmObject() {
     @PrimaryKey
-    var id = UUID.randomUUID().toString()
+    var id : String = UUID.randomUUID().toString()
     var number: String? = null
     var videos: RealmList<Video> = RealmList()
 }
