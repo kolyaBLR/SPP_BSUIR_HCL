@@ -6,9 +6,11 @@ import java.util.*
 
 open class Producer : RealmObject() {
     @PrimaryKey
-    var id : String = UUID.randomUUID().toString()
+    var id: String = UUID.randomUUID().toString()
     var firstName: String? = null
     var middleName: String? = null
     var lastName: String? = null
     var about: String? = null
+
+    override fun toString() = firstName + " " + lastName
 }

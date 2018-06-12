@@ -44,13 +44,13 @@
         android:layout_marginTop="8dp" />
 
     <Button
-        android:id="@+id/addFilmButton"
+        android:id="@+id/addVideoButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/add_film" />
+        android:text="Добавить видео" />
 
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/ActorId"
@@ -67,7 +67,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/add_film" />
+        android:text="Добавить актёра" />
 
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/ProducerId"
@@ -84,6 +84,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/add_film" />
+        android:text="Добавить продюсера" />
 
 </LinearLayout>
