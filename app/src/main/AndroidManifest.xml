@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".ui.activity.FilmCreatedActivity" />
         <activity android:name=".ui.activity.FilmDetailActivity" />
-        <activity android:name=".ui.activity.UserCreatedActivity"></activity>
+        <activity android:name=".ui.activity.UserCreatedActivity" />
+        <activity android:name=".ui.activity.UsersListActivity"></activity>
     </application>
 
 </manifest>

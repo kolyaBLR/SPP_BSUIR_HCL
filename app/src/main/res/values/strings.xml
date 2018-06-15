@@ -20,4 +20,12 @@
     <string name="actor">Актер</string>
     <string name="success_user_created">Пользователь успешно создан!</string>
     <string name="error_create_user">Заполните первые 3 поля пользователя</string>
+    <string name="actor_created">Создание актера</string>
+    <string name="producer_created">Создание продюсера</string>
+    <string name="actors">Актеры</string>
+    <string name="producers">Продюсеры</string>
+    <string name="not_empty_values">Все поля обязательны для заполнения!!!</string>
+    <string name="video_link">Ссылка на страницу с видео</string>
+    <string name="succerr_film_created">Фильм успешно создан</string>
+    <string name="description">Описание</string>
 </resources>

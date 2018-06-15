@@ -9,81 +9,49 @@
         android:id="@+id/nameFilm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:hint="@string/name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/descriptionFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/linkImageFilm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:hint="@string/image_link"
-        android:inputType="text" />
+        android:inputType="textUri" />
 
     <EditText
         android:id="@+id/tagsFilm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:hint="@string/tags_search"
         android:inputType="textAutoCorrect" />
 
-    <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/filmVideoID"
+    <EditText
+        android:hint="@string/video_link"
+        android:id="@+id/videoUrl"
+        android:inputType="textUri"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp" />
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/addVideoButton"
+    <EditText
+        android:hint="@string/actors"
+        android:id="@+id/addActor"
+        android:inputType="textAutoCorrect"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Добавить видео" />
+        android:layout_height="wrap_content" />
 
-    <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/ActorId"
+    <EditText
+        android:hint="@string/producers"
+        android:id="@+id/addProducer"
+        android:inputType="textAutoCorrect"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp" />
-
-    <Button
-        android:id="@+id/addActorButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Добавить актёра" />
-
-    <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/ProducerId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp" />
-
-    <Button
-        android:id="@+id/addProducerButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Добавить продюсера" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

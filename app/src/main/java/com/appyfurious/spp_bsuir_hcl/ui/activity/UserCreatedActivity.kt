@@ -1,10 +1,11 @@
 package com.appyfurious.spp_bsuir_hcl.ui.activity
 
+import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.appyfurious.spp_bsuir_hcl.R
 import com.appyfurious.spp_bsuir_hcl.repositories.UserRepository
@@ -12,15 +13,19 @@ import kotlinx.android.synthetic.main.activity_user_created.*
 
 class UserCreatedActivity : AppCompatActivity() {
 
+    companion object {
+        private const val USER_KEY = "user_key_wafegsrhdn"
+        fun intent(context: Context, userKey: Int) = Intent(context,
+                UserCreatedActivity::class.java).putExtra(USER_KEY, userKey)
+    }
+
     private val userRepository = UserRepository()
+    private fun isActor() = this.intent.getIntExtra(USER_KEY, -1) == UserRepository.ACTOR
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_created)
-
-        userType.adapter = ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, listOf(getString(R.string.actor),
-                getString(R.string.producer)))
+        supportActionBar?.setTitle(if (isActor()) R.string.actor_created else R.string.producer_created)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -46,7 +51,7 @@ class UserCreatedActivity : AppCompatActivity() {
     }
 
     private fun saveUser() {
-        userRepository.insertUser(userType.selectedItemId.toInt(), name1.text.toString(),
-                name2.text.toString(), name3.toString(), about.toString())
+        userRepository.insertUser(if (isActor()) UserRepository.ACTOR else UserRepository.PRODUCER,
+                name1.text.toString(), name2.text.toString(), name3.toString(), about.toString())
     }
 }

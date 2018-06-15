@@ -6,11 +6,6 @@
     android:orientation="vertical"
     tools:context=".ui.activity.UserCreatedActivity">
 
-    <Spinner
-        android:id="@+id/userType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <EditText
         android:id="@+id/name1"
         android:hint="@string/name1"
