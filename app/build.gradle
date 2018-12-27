@@ -6,7 +6,7 @@ apply plugin: 'realm-android'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.appyfurious.spp_bsuir_hcl"
+        applicationId "com.bobrov.spp_bsuir_hcl"
         minSdkVersion 22
         targetSdkVersion 27
         versionCode 1
